@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: rgb(250, 235, 215);
 }
 
 .cuadro {
@@ -34,7 +34,7 @@ body {
 }
 .colorCont .subrayado {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 form {
