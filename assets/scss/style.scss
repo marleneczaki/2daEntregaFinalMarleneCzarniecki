@@ -1,15 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
-*{
-    font-family: 'Oswald', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-$colorPrimario:rgb(145, 61, 50);
+
+$color:(
+    primario: rgb(145, 61, 50),
+    secundario: rgb(180, 179, 179),
+    terciario: 
+);
 
 @import "footer";
 @import "Contacto";
 @import "ubicacion";
 @import "general";
-@import "index";
+
+.tamañoTitle{
+    font-size: 35px;
+    font-optical-sizing: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+
+
 
 

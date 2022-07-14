@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+*{
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.colorCont{
+    background-color: map-get($color, primario);
+    .subrayado{
+        text-decoration: none;
+        color: map-get($color, secundario);
+    }
+}
+.fontClass{
+    font-family: 'Oswald', sans-serif;
+    color: $colorPrimario;
+}
+.fondo{
+    font-size: larger;
+    a{
+        text-decoration: none;
+        color: rgb(0, 128, 0);
+    }
+}
+.cuadro{
+    background-color: map-get($color, secundario);
+    .tamañoImg{
+        width: 64px;
+    }
+}
+body{
+    background-color:map-get($color, secundario);
+}
