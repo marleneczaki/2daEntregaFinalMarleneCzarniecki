@@ -3,23 +3,23 @@
     font-family: 'Oswald', sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 .colorCont{
     background-color: map-get($color, primario);
     .subrayado{
         text-decoration: none;
-        color: map-get($color, secundario);
+        color:  map-get($color, terciario);
     }
 }
 .fontClass{
     font-family: 'Oswald', sans-serif;
-    color: $colorPrimario;
+    color: map-get($color, primario);
 }
 .fondo{
     font-size: larger;
     a{
         text-decoration: none;
-        color: rgb(0, 128, 0);
     }
 }
 .cuadro{
@@ -29,5 +29,5 @@
     }
 }
 body{
-    background-color:map-get($color, secundario);
+    background-color:antiquewhite;
 }

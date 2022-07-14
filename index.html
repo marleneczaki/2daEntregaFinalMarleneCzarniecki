@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CZAKI</title>
+    <meta name="description" content="Envio de indumentaria al por mayor a toda la argentina, descubre el mejor mayorista de ropa oversize">
+    <meta name="keywords" content="oversize, por mayor, remerones, hoodies,canguros, buzos, vicente lopez,indumentaria por mayor">
+    <title>Ropa por mayor</title>
     <link rel="shortcut icon" href="./assets/img/logo.jpg" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS only -->
@@ -15,7 +17,7 @@
 
     <header>
         <div data-aos="fade-down-left" class="colorCont d-flex justify-content-center">
-          <a class="subrayado p-1" href="https://api.whatsapp.com/send/?phone=5491135974351" target="blank">Contactanos al +54 9 113597-4351</a>
+          <a class="subrayado text-white p-1" href="https://api.whatsapp.com/send/?phone=5491135974351" target="blank">Contactanos al +54 9 113597-4351</a>
         </div>
         
         <nav class="navbar navbar-expand-lg bg-light">
@@ -43,9 +45,15 @@
                     <li><a class="dropdown-item" href="./pages/cambiosYdevoluciones.html">Cambios y devoluciones</a></li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTOS</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./pages/productos.html">Hoodies y buzos</a></li>
+                    <li><a class="dropdown-item" href="./pages/productos2.html">Remerones</a></li>
+                  </ul>
                 </li>
+
                 <li class="nav-item">
                   <a class="nav-link" href="./pages/ubicacion.html">UBICACIÓN</a>
                 </li>
@@ -57,7 +65,9 @@
     </header>
 
     <main>
-
+        <div class="encabezado">
+          <h1 class="text-center my-3">CZAKI CLOTHES</h1>
+        </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" >
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -95,7 +105,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title">Buzo oversize</h5>
                   <p class="card-text">Friza invisible sublimable</p>
-                  <a href="./pages/productos.html" class="btn btn-primary">ver +</a>
+                  <a href="./pages/productos.html" class="btn-uno">ver +</a>
                 </div>
               </div>
 
@@ -104,7 +114,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title">Hoodie oversize</h5>
                   <p class="card-text">Friza invisible sublimable</p>
-                  <a href="./pages/productos.html" class="btn btn-primary">ver +</a>
+                  <a href="./pages/productos.html" class="btn-dos">ver +</a>
                 </div>
               </div>
 
@@ -113,7 +123,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title">Buzo oversize</h5>
                   <p class="card-text">Friza invisible sublimable</p>
-                  <a href="./pages/productos.html" class="btn btn-primary">ver +</a>
+                  <a href="./pages/productos.html" class="btn-uno">ver +</a>
                 </div>
               </div>
 
@@ -122,7 +132,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title">Hoodie oversize</h5>
                   <p class="card-text">Friza invisible sublimable</p>
-                  <a href="#" class="btn btn-primary">ver +</a>
+                  <a href="./pages/productos.html" class="btn-dos">ver +</a>
                 </div>
               </div>
 
@@ -171,5 +181,6 @@
 <script>
   AOS.init();
 </script>
+
 </body>
 </html>

@@ -1,21 +1,58 @@
 
 $color:(
     primario: rgb(145, 61, 50),
-    secundario: rgb(180, 179, 179),
-    terciario: 
+    secundario: rgb(180, 179, 179)
 );
+
+$btn:(
+    paddin: 10px 20px,
+    radius: 5px,
+    decoracion: none,
+    colorT: rgb(255, 255, 255)
+);
+$colorBtn:(
+    uno: rgb(210, 105, 30),
+    dos: rgb(171, 210, 30)
+);
+
+@mixin propiedades($tamanio, $margen, $paddin) {
+    font-size: $tamanio;
+    margin: $margen;
+    padding: $paddin;
+}
 
 @import "footer";
 @import "Contacto";
-@import "ubicacion";
 @import "general";
 
 .tamañoTitle{
-    font-size: 35px;
-    font-optical-sizing: 20px;
-    margin: 20px;
-    padding: 10px;
+    @include propiedades(50px, 10px , 30px);
+    font-optical-sizing: 40px;
 }
+iframe{
+
+    width: 100%;
+} 
+.btn{
+    padding: map-get($btn , paddin );
+    border-radius: map-get($btn , radius );
+    text-decoration: map-get($btn , decoracion );
+    color: map-get($btn , colorT );
+}
+
+@each $key, $var in $colorBtn {
+
+    .btn-#{$key}{
+        @extend .btn;
+        background-color: $var;
+    } 
+
+}
+.encabezado{
+    color: map-get($color, primario),
+    
+}
+
 
 
 
