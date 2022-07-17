@@ -24,10 +24,6 @@
   background-color: rgb(171, 210, 30);
 }
 
-.encabezado {
-  color: rgb(145, 61, 50);
-}
-
 .headerI {
   width: 100%;
   min-height: 100vh;
@@ -214,10 +210,6 @@ iframe {
   width: 100%;
 }
 
-.blancoT {
-  color: white;
-}
-
 footer {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
 }
@@ -238,7 +230,8 @@ footer img {
 
 .fondo {
   font-size: larger;
-  padding-top: 35px;
+  padding-top: 40px;
+  padding-bottom: 200px;
 }
 .fondo a {
   text-decoration: none;
@@ -247,4 +240,5 @@ footer img {
 .medio {
   color: #f4f4f4;
   text-align: center;
+  padding-top: 15px;
 }
