@@ -1,0 +1,166 @@
+.headerI{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(../img/heroo.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover ;
+    background-attachment: fixed;
+    .foto h2{
+        font-family: 'Cormorant SC', serif;
+    }
+}
+.headerP{
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    .foto h2{
+        font-family: 'Cormorant SC', serif;
+    }
+}
+
+.backg{
+   position: relative;
+   z-index: 20;
+   width: 100%; 
+}
+@media(min-width: 912px){
+    .bg-dark{
+        background-color: #040000;
+        
+    }
+}
+.navg a{
+   color: #f4f4f4;
+   font-size: 23px;
+   padding: 10ps 15px;
+   text-align: center center;
+   text-transform: uppercase;
+   &:hover{
+    background-color: #afaaaaa2;
+   }
+}
+.textHeader{
+    min-height: 100vh;
+    color: #f4f4f4;
+    h2{
+        font-family: 'Anton', sans-serif;
+    }
+    span{
+        letter-spacing: 5px;
+        font-size: 1.3em;
+        font-family: 'Anton', sans-serif;
+        margin: 0 0 0 5px;
+    }
+    p{
+        font-size: 1em;
+    }
+} 
+.btn-yo{
+    padding: 7px 12px;
+    color: #f4f4f4;
+    background-color:#180d0da2;
+    &:hover{
+        color: #f4f4f4;
+        background-color:#180d0d;
+    }
+}
+
+body{
+    background-color: #040000;
+}
+.mainI{
+    position: relative;
+    top:800px;
+    text-align: center;
+    color: white;
+}
+.fontClass{
+    font-family: 'Cormorant SC', serif;
+    color: white;
+    font-size: 40px;
+    padding: 30px;
+}
+
+.ingresos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 100px;
+    .face{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5%;
+    }
+    .front{
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h3{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            color: #fff;
+            background: rgba(0, 0, 0, .4);
+            text-align: center;
+        }
+    }
+    .back{
+        transform: perspective(600px) rotateY(180deg);
+        background: rgb(3,35,54);
+        padding: 15px;
+        color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 5px 10px #000;
+        p{
+            letter-spacing: 1px;
+         }
+    }
+    .link{
+        border-top: solid 1px #f3f3f3;
+        height: 50px;
+        line-height: 50px;
+        a{
+            color: #f3f3f3;
+        }
+        h3{
+            font-size: 30px;
+            margin-top: 20px;
+            letter-spacing: 2px;
+         }
+    }
+}
+ 
+
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}

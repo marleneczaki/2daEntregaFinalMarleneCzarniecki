@@ -1,14 +1,34 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+SC:wght@700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "oswald";
-  box-sizing: border-box;
+.tamañoTitle {
+  font-size: 50px;
+  margin: 10px;
+  padding: 30px;
+  font-optical-sizing: 40px;
 }
 
-.header {
+.btn, .btn-dos, .btn-uno {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.btn-uno {
+  background-color: rgb(210, 105, 30);
+}
+
+.btn-dos {
+  background-color: rgb(171, 210, 30);
+}
+
+.encabezado {
+  color: rgb(145, 61, 50);
+}
+
+.headerI {
   width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/heroo.jpg);
@@ -18,7 +38,16 @@
   background-size: cover;
   background-attachment: fixed;
 }
-.header .foto h2 {
+.headerI .foto h2 {
+  font-family: "Cormorant SC", serif;
+}
+
+.headerP {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+}
+.headerP .foto h2 {
   font-family: "Cormorant SC", serif;
 }
 
@@ -71,17 +100,6 @@
   background-color: #180d0d;
 }
 
-footer {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
-}
-footer a {
-  text-decoration: none;
-  color: rgb(21, 11, 11);
-}
-footer img {
-  width: 150px;
-}
-
 body {
   background-color: #040000;
 }
@@ -114,7 +132,6 @@ body {
   height: 350px;
   margin: 100px;
 }
-
 .card .face {
   position: absolute;
   width: 100%;
@@ -125,12 +142,10 @@ body {
   overflow: hidden;
   transition: 0.5%;
 }
-
 .card .front {
   transform: perspective(600px) rotateY(0deg);
   box-shadow: 0 5px 10px #000;
 }
-
 .card .front img {
   position: absolute;
   width: 100%;
@@ -138,7 +153,6 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .card .front h3 {
   position: absolute;
   bottom: 0;
@@ -149,7 +163,6 @@ body {
   background: rgba(0, 0, 0, 0.4);
   text-align: center;
 }
-
 .card .back {
   transform: perspective(600px) rotateY(180deg);
   background: rgb(3, 35, 54);
@@ -161,25 +174,21 @@ body {
   text-align: center;
   box-shadow: 0 5px 10px #000;
 }
-
+.card .back p {
+  letter-spacing: 1px;
+}
 .card .link {
   border-top: solid 1px #f3f3f3;
   height: 50px;
   line-height: 50px;
 }
-
 .card .link a {
   color: #f3f3f3;
 }
-
-.card .back h3 {
+.card .link h3 {
   font-size: 30px;
   margin-top: 20px;
   letter-spacing: 2px;
-}
-
-.card .back p {
-  letter-spacing: 1px;
 }
 
 .card:hover .front {
@@ -188,4 +197,54 @@ body {
 
 .card:hover .back {
   transform: perspective(600px) rotateY(360deg);
+}
+
+form {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/heroo.jpg");
+  padding: 20px;
+  border-radius: 12px;
+}
+form textarea {
+  min-height: 200px;
+  min-width: 100%;
+  resize: none;
+}
+
+iframe {
+  width: 100%;
+}
+
+.blancoT {
+  color: white;
+}
+
+footer {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
+}
+footer a {
+  text-decoration: none;
+  color: rgb(21, 11, 11);
+}
+footer img {
+  width: 150px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "oswald";
+  box-sizing: border-box;
+}
+
+.fondo {
+  font-size: larger;
+  padding-top: 35px;
+}
+.fondo a {
+  text-decoration: none;
+}
+
+.medio {
+  color: #f4f4f4;
+  text-align: center;
 }
