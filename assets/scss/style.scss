@@ -2,21 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+SC:wght@700&display=swap');
 
-$color:(
-    primario: rgb(145, 61, 50),
-    secundario: rgb(180, 179, 179)
-);
 
-$btn:(
-    paddin: 10px 20px,
-    radius: 5px,
-    decoracion: none,
-    colorT: rgb(255, 255, 255)
-);
-$colorBtn:(
-    uno: rgb(210, 105, 30),
-    dos: rgb(171, 210, 30)
-);
 
 @mixin propiedades($tamanio, $margen, $paddin) {
     font-size: $tamanio;
@@ -26,21 +12,6 @@ $colorBtn:(
 .tamañoTitle{
     @include propiedades(50px, 10px , 30px);
     font-optical-sizing: 40px;
-}
-.btn{
-    padding: map-get($btn , paddin );
-    border-radius: map-get($btn , radius );
-    text-decoration: map-get($btn , decoracion );
-    color: map-get($btn , colorT );
-}
-
-@each $key, $var in $colorBtn {
-
-    .btn-#{$key}{
-        @extend .btn;
-        background-color: $var;
-    } 
-
 }
 
 
@@ -60,7 +31,7 @@ $colorBtn:(
 .fondo{
     font-size: larger;
     padding-top: 40px;
-    padding-bottom: 200px;
+    padding-bottom: 90px;
     a{
         text-decoration: none;
     }
@@ -68,5 +39,21 @@ $colorBtn:(
 .medio{
     color: #f4f4f4;
     text-align: center;
+    justify-content: center center;
     padding-top: 15px;
+}
+.nav-link{
+    color: gray;
+}
+.btn-P{
+    padding: 7px 12px;
+    color: #f4f4f4;
+    border-radius: 5px;
+    background-color:#180d0d;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover{
+        color: #020000;
+        background-color:#2d1b1ba2;
+    }
 }

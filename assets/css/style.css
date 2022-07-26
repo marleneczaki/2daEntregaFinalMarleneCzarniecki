@@ -9,24 +9,8 @@
   font-optical-sizing: 40px;
 }
 
-.btn, .btn-dos, .btn-uno {
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-.btn-uno {
-  background-color: rgb(210, 105, 30);
-}
-
-.btn-dos {
-  background-color: rgb(171, 210, 30);
-}
-
 .headerI {
   width: 100%;
-  min-height: 100vh;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/heroo.jpg);
   position: absolute;
   background-repeat: no-repeat;
@@ -40,7 +24,6 @@
 
 .headerP {
   width: 100%;
-  min-height: 100vh;
   position: absolute;
 }
 .headerP .foto h2 {
@@ -61,7 +44,7 @@
 .navg a {
   color: #f4f4f4;
   font-size: 23px;
-  padding: 10ps 15px;
+  padding: 10px 15px;
   text-align: center center;
   text-transform: uppercase;
 }
@@ -89,7 +72,7 @@
 .btn-yo {
   padding: 7px 12px;
   color: #f4f4f4;
-  background-color: rgba(24, 13, 13, 0.6352941176);
+  background-color: rgba(53, 36, 36, 0.6352941176);
 }
 .btn-yo:hover {
   color: #f4f4f4;
@@ -114,16 +97,128 @@ body {
   padding: 30px;
 }
 
-form {
-  padding: 20px;
-  border-radius: 12px;
+.mainC {
+  background: #181818;
+  color: #fff;
+  padding: 0 1.5em;
 }
-form textarea {
-  min-height: 200px;
+
+.content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+
+.logoC {
+  text-align: center;
+  font-size: 3em;
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+}
+
+.contact-wrapper > * {
+  padding: 1em;
+}
+
+.contact-form {
+  background-color: #222222;
+}
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-transform: uppercase;
+}
+.contact-form form div {
+  margin: 0;
+  padding: 1em;
+}
+.contact-form form button {
+  width: 50%;
+  text-transform: uppercase;
+  background-color: #80797e;
+  color: #000;
+  padding: 10px;
+  border-radius: 10px;
+}
+.contact-form form button:hover {
+  background-color: rgba(48, 41, 41, 0.6352941176);
+  color: #fff;
+}
+.contact-form form button:hover {
+  color: #f4f4f4;
+  background-color: rgba(45, 27, 27, 0.6352941176);
+}
+.contact-form form .estiloC {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #80797e;
+  outline: none;
+  color: #fff;
+}
+.contact-form form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #80797e;
+  outline: none;
+  color: #fff;
+  min-height: 150px;
   min-width: 100%;
   resize: none;
 }
+.contact-form form .block {
+  grid-column: 1/3;
+}
 
+.contact-info {
+  background: #000;
+}
+.contact-info h4 {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+.contact-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  list-style: none;
+  padding: 0;
+  padding: 0.3em;
+}
+.contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+@media (min-width: 980px) {
+  .mainC {
+    padding: 0 4rem;
+  }
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+    padding: 2em;
+  }
+  .contact-info h4 {
+    padding: 1em;
+    text-align: left;
+  }
+  .contact-info ul {
+    padding: 1em;
+    text-align: left;
+  }
+  .contact-info p {
+    padding: 1em;
+    text-align: left;
+  }
+}
 iframe {
   width: 100%;
 }
@@ -151,17 +246,10 @@ footer img {
   padding: 30px;
 }
 
-.cardGrid {
-  display: flex;
-  grid-gap: 80px;
-  padding: 20px;
-}
-
 .flip-card {
   width: 320px;
   height: 504px;
   perspective: 2000px;
-  margin: 80px;
 }
 .flip-card-inner {
   position: relative;
@@ -197,8 +285,7 @@ footer img {
 .flip-card:hover .flip-card-inner {
   transform: rotateY(-180deg);
 }
-
-.flip-card-front h3 {
+.flip-card .flip-card-front h3 {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -215,7 +302,6 @@ footer img {
   box-sizing: border-box;
   float: left;
   text-align: center;
-  border-radius-top: 0px;
   cursor: pointer;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.16);
   transition: 0.4s;
@@ -236,7 +322,7 @@ footer img {
 .fondo {
   font-size: larger;
   padding-top: 40px;
-  padding-bottom: 200px;
+  padding-bottom: 90px;
 }
 .fondo a {
   text-decoration: none;
@@ -245,5 +331,23 @@ footer img {
 .medio {
   color: #f4f4f4;
   text-align: center;
+  justify-content: center center;
   padding-top: 15px;
+}
+
+.nav-link {
+  color: gray;
+}
+
+.btn-P {
+  padding: 7px 12px;
+  color: #f4f4f4;
+  border-radius: 5px;
+  background-color: #180d0d;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn-P:hover {
+  color: #020000;
+  background-color: rgba(45, 27, 27, 0.6352941176);
 }

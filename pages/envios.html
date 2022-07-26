@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envios a todo el pais</title>
+     <!--Font awesome-->
+     <script src="https://kit.fontawesome.com/0eb28ddb59.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../assets/img/logo.jpg" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS only -->
@@ -33,14 +35,8 @@
                     <li class="nav-item">
                       <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        INFO
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item text-black" href="../pages/envios.html">Envíos</a></li>
-                        <li><a class="dropdown-item text-black" href="../pages/cambiosYdevoluciones.html">Cambios y devoluciones</a></li>
-                      </ul>
+                    <li class="nav-item">
+                      <a class="nav-link active text-secondary" href="../pages/envios.html">INFO</a>
                     </li>
     
                     <li class="nav-item dropdown">
@@ -62,28 +58,26 @@
   </div>
   </header>
 
-
-
-    <main class="container-fluid pb-5 mb-5">
-      <div class="fondo row ms-3 me-3">
-        <div class="mt-5 pt-5 mb-5 medio">
+    <main class="container-fluid">
+      <div class="fondo row ">
+        <div class="mt-5 pt-5 medio">
           <H1>INFO ENVIOS</H1>
         </div>
         
-            <div class="mt-5 mb-5 col-md-4 col-12 text-center">
+            <div class="mt-5 col-md-4 col-12 text-center">
                 <p class="text-danger">¿Cuánto demora la entrega de mi pedido?</p>
                 <p class="text-white">La demora de los envíos depende de la localidad donde vivas y de la opción de entrega que selecciones.
                   Si elegís opción delivery (apto para caba, zona norte y zona oeste) demora entre 24 y 72 horas.
                   Si elegís la opción Correo: demora entre 3 y 5 días hábiles si estas cerca de CABA. Sino demora entre 5 y 7 días hábiles.</p>
             </div>
 
-            <div class="mt-5 mb-5 col-md-4 col-12 text-center">
+            <div class="mt-5  col-md-4 col-12 text-center">
                 <p class="text-danger">¿Como es la entrega por delivery?​</p>
                 <p class="text-white">Si estas en caba o zona norte , podes elegir la opcion delivery.
                   Nosotros el dia del envio te contactamos por whastapp para coordinar la entrega.</p>  
             </div>
      
-          <div class="mb-5 mt-5 col-md-4 col-12 text-center">
+          <div class="mt-5 col-md-4 col-12 text-center">
               <p class="text-danger">¿Puedo elegir envio a sucursal de Correo o a domicilio?​​</p>
               <p class="text-white">Si, si elegís la opción Correo tenes dos opciones:
                 Sucursal: llega a la sucursal más cercana a tu domicilio.
@@ -98,8 +92,61 @@
         </div>
   
     </div>
+
+  
+    <div class="mb-5 medio">
+      <H1>INFO CAMBIOS Y DEVOLUCIONES</H1>
+    </div>
+      <div class="fondo ms-5">
+              <div class="col-8" >
+                  <p class="text-danger">Si compre algo, pero quiero cambiarlo ¿Cuánto tiempo tengo?</p>
+                  <p class="text-white" >El tiempo para realizar un cambio es de 30 dias. Si compraste una prenda y el talle te quedó chico, grande, o no te gusta podemos cambiarte el producto.</p>
+              </div>
+              <div class="col-8">
+                  <p class="text-danger">¿Cómo hacemos?</p>
+                  <p class="text-white" >Primero comunicate con nosotros por Whatsapp al <a href="https://api.whatsapp.com/send/?phone=5491135974351">+54 9 11 3597-4351</a> para informar que queres hacer un cambio.
+                      Si sos de CABA o Zona Norte el cambio lo podemos hacer por delivery.
+                      Si no estas en CABA nosotros te mandamos una etiqueta por mail de Correo Argentino, vos tenes que pegársela al paquete, llevar el paquete a tu correo más cercano. Una vez que llega el producto y lo revisamos, nosotros te despachamos tu nueva prenda. El envío por el cambio es a cargo del comprador.
+                      Condiciones de cambio</p>
+                  <ul class="text-white">
+                      <li>El artículo tiene que estar en el mismo estado que se entregó.</li>
+                      <li>El cambio se realiza siempre y cuando tengamos el artículo en stock.</li>
+                      <li>Tenes que presentar tu orden de compra.</li>
+                  </ul>    
+              </div>
+      </div>
     </main>
-    <aside></aside>
+    <aside class="container-fluid celu">
+      <div class="mb-5 medio">
+        <h1>TESTIMONIOS</h1>
+      </div>
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" width="550px" height="550px">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/img/testimonioMaquilladora.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/testimonioPeriodista.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/testimonioProgramador.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      
+      
+      
+    </aside>
   
     <footer class="mb-0 footer-color d-flex justify-content-around flex-wrap align-items-center p-4 my-3">
 
@@ -120,12 +167,13 @@
         </div>
   
         <div>
-        <a href="https://api.whatsapp.com/send/?phone=5491135974351" target="blank">+54 9 113597-4351</a>
+            <a href="https://api.whatsapp.com/send/?phone=5491135974351" target="blank"><i class="fa-brands fa-whatsapp">+54 9 113597-4351</i></a>
         </div>
         <div>
-          <a href="https://www.instagram.com/czaki.clothes/" target="blank">Instagram</a>
-          </div>
-      </div>
+            <a href="https://www.instagram.com/czaki.clothes/" target="blank"><i class="fa-brands fa-instagram"> Czaki.clothes</i></a>
+            </div>
+        </div>
+        
       
   
   </footer>
